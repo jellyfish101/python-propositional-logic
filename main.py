@@ -1,5 +1,5 @@
-from formula import *
-from operators import *
+from parser import *
+from synthax import *
 
 if __name__ == "__main__":
 
@@ -13,5 +13,5 @@ if __name__ == "__main__":
         
     while(1):      
         str = input("\nformula ? ==> ")
-        formula = TruthFunction(str)
-        formula.gen_table()
+        func = TruthFunction(str)
+        func.gen_table()
